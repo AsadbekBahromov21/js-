@@ -1,0 +1,72 @@
+.hero{
+    background: #043036;
+    // margin-top: 60px;
+    &__wrapper{
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    &__card{
+        border: 1px solid rgb(226, 219, 219);
+        background: #fff;
+        // width: 220px;
+        img{
+        width: 100%;
+        height: 150px;
+        }
+    }
+    &__text{
+        padding: 5px;
+    }
+    &__info{
+       font-size: 12px;
+       margin-bottom: 6px;
+       display: flex;
+       justify-content: space-between;
+       i{
+        &:hover{
+            color: red;
+            cursor: pointer;
+        }
+       }
+    }
+    &__title{
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+    &__span{
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 3px;
+    }
+    &__p{
+        font-size: 12px;
+    }
+}
+@media (max-width:1160px) {
+    .hero{
+        &__wrapper{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    
+}
+@media (max-width:990px) {
+    .hero{
+        &__wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+}
+@media (max-width:590px) {
+    .hero{
+        &__wrapper{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+}
